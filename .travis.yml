@@ -1,3 +1,10 @@
 language: cpp
-    - make
-    - ./a.out
+dist: xenial
+compiler: gcc
+sudo: true
+
+install:
+  - sudo apt-get install clang
+
+script: 
+  - ./build.sh
